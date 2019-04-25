@@ -31,6 +31,6 @@ local_conf_header:
     # build from local git directory
     KERNEL_NAME = "apu2-local"
     # build from remote
-    KERNEL_NAME = "apu2"
+    #KERNEL_NAME = "apu2"
   image_type:
     IMAGE_TYPE = "targz-img"
