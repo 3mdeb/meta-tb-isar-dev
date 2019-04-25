@@ -21,3 +21,11 @@ git clone git@github.com:3mdeb/meta-tb-isar-dev.git
 ```
 SHELL=bash kas-docker --isar build meta-tb-isar-dev/kas.yml
 ```
+
+## Development
+
+### Rootfs modification
+
+Simply add the `Debian` packages you need to the `isar-image-xen.bb` recipe.
+
+### Linux kernel modification
