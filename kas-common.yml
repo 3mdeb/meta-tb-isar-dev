@@ -3,8 +3,6 @@ header:
 
 machine: qemu-amd64
 distro: debian-buster
-target:
-  - multiconfig:qemuamd64-buster:isar-image-xen
 
 repos:
   meta-tb-isar-dev:
