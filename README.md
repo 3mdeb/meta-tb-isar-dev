@@ -59,3 +59,13 @@ would be to:
 
 * Make some changes in the `tb-sdk/linux-stable` repo and commit them
 * rebuild
+
+## Deploy
+
+Build artifacts are available in `isar-sdk/build/tmp/deploy/images/qemuamd64`:
+
+```
+-rw-r--r-- 1 root    root     72M Apr 25 13:26 isar-image-xen-debian-buster-qemuamd64.tar.gz
+-rw-r--r-- 1 root    root    5.1M Apr 25 13:26 isar-image-xen-debian-buster-qemuamd64.initrd.img-4.19.36
+-rw-r--r-- 1 builder builder 8.0M Apr 25 13:26 isar-image-xen-debian-buster-qemuamd64.vmlinuz-4.19.36
+```
