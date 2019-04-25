@@ -28,4 +28,4 @@ local_conf_header:
   cross: |
     ISAR_CROSS_COMPILE = "1"
   kernel_name:
-    KERNEL_NAME: apu2
+    KERNEL_NAME = "apu2"
