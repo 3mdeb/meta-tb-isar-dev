@@ -29,14 +29,11 @@ git clone --branch tb-apu2-dev git@github.com:3mdeb/linux-stable.git
 
 * whole image:
 
+> Below command will build kernel and rootfs. Kernel modules are part of the
+> rootfs.
+
 ```
 SHELL=bash kas-docker --isar build meta-tb-isar-dev/kas-rootfs.yml
-```
-
-* kernel only:
-
-```
-SHELL=bash kas-docker --isar build meta-tb-isar-dev/kas-kernel.yml
 ```
 
 ## Development
