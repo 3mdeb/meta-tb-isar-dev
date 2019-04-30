@@ -1,0 +1,7 @@
+header:
+  version: 8
+  includes:
+    - kas-common.yml
+
+target:
+  - multiconfig:qemuamd64-buster:isar-image-xen

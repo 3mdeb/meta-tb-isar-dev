@@ -1,0 +1,34 @@
+header:
+  version: 8
+
+machine: qemu-amd64
+distro: debian-buster
+
+repos:
+  meta-tb-isar-dev:
+
+  isar:
+    url: https://github.com/ilbers/isar
+    refspec: 39c970f485f3d5c0a000e84157c50a93b9be6eaa
+
+    layers:
+      meta:
+      meta-isar:
+
+bblayers_conf_header:
+  standard: |
+    LCONF_VERSION = "6"
+    BBPATH = "${TOPDIR}"
+    BBFILES ?= ""
+local_conf_header:
+  standard: |
+    CONF_VERSION = "1"
+  cross: |
+    ISAR_CROSS_COMPILE = "1"
+  kernel_name:
+    # build from local git directory
+    KERNEL_NAME = "apu2-local"
+    # build from remote
+    #KERNEL_NAME = "apu2"
+  image_type:
+    IMAGE_TYPE = "targz-img"
